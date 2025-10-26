@@ -1,0 +1,94 @@
+% Jenkins 
+ek open-source automation tool hai 
+jo continuous integration aur continuous deployment (CI/CD) ke liye software development mein istemal hota hai.
+Jenkins via GIT (CI, CD)
+
+Jenkins via Git ka use karke hum Continuous Integration (CI) aur Continuous Delivery/Deployment (CD) ko automate karte hain, 
+jaha code Git me push hote hi build, test aur deploy process automatic ho jata hai.
+
+What is Jenkins?
+Jenkins → Will help you to run your code automatically. It like a slave.
+5 steps in Jenkins
+Build, Trigger → Post build It can send the emails, or generate the allure report also
+
+Plugins: -
+Install Allure Report 
+ShiningPanda
+
+80-90% of time u will use freestyle job
+
+Steps
+Setup the free style job
+Add git repo
+Add the config
+Run the code
+
+1)Give description
+2)Parameterized -> choice parameter          ( which branch do you want to run
+		    -> string parameter            ( which testcase do you want to run
+3)Source Code Management -> Git
+	->Credentials                                    ( security lagane k liye
+		->Branches to build			(konsi branch se chalana h?
+	4)Trigger                                                                   (kis time run karna h
+Trigger builds remotely (e.g., from scripts	(run specific scripts, file	
+Build periodically -> schedule
+H * * * * -> run after every 1 hour
+	5)Build Steps -> custom python builder
+
+Dashboard > manage jenkins > tools 
+	Jdk
+	Python installation
+
+
+Direct
+Create job
+	1)Source code management->Git
+	2)Branches to build-> */main
+	3)Build steps -> execute windows batch command ->:
+		set path="C:\Program Files\Python313"
+set path="C:\Program Files\Python313\Scripts"
+pip install -r requirements.txt
+Pytest tests/vwoLoginTests/test/_vwo_login_of.py
+	4)post-build Actions -> allure report
+		Go to http://localhost:8080/configureTools/ for fix to allure report
+
+Jenkins 
+code build, test, aur deploy ko automate karta hai, pipeline creation, plugin support, distributed builds, aur version control integration jaise Git aur SVN ke saath kaam karta hai.
+
+CI/CD 
+(Continuous Integration/Continuous Deployment) 
+ek software development practice hai jisme code changes ko regularly aur automatically build, test, aur deploy kiya jata hai.
+
+run selenium test on jenkins
+Selenium test ko Jenkins pe run karna matlab 
+web apps ke test scripts ko automatically Jenkins CI/CD pipeline mein chalana hai taki continuous testing aur integration ho sake.
+
+Haan bhai, Jenkins ko seekhna software tester ke liye zaroori hai kyunki:
+Ye automated test suites ko run karta hai.
+Web aur mobile automation suite ko bhi chala sakta hai.
+API monitoring ka kaam bhi karta hai.
+Report aur email notification bhejta hai.
+Trends aur detailed failure details share karne mein madad karta hai.
+Slave use karke build aur run ko tezi se kar sakte ho.
+Toh, ise seekh ke testing ka kaam aur aasaan aur fast ho jayega!
+
+Jenkins mein freestyle job 
+ek flexible, user-defined configuration hota hai jo build, test, aur deploy jaise tasks ko manually customize karke automate karta hai.
+
+Crontab Guru एक ऑनलाइन टूल है जो क्रॉन जॉब शेड्यूलिंग को आसान बनाने के लिए क्रॉन एक्सप्रेशन को समझने और बनाने में मदद करता है।
+
+Install Jenkins
+
+Freestyle Jobs
+Jenkins mein freestyle jobs ek flexible tareeka hai build, test, ya deploy processes ko configure karne ka, jahan aap easily steps aur plugins add kar sakte hain.
+
+PIPELINE
+Jenkins mein pipeline ek automated process hai jo code ko build, test, aur deploy karta hai with defined stages aur steps.
+
+Install Plugins and Creating Freestyle Job.
+Run API Automation via Jenkins
+Run Selenium Automation via Jenkins
+Trigger job via Hook
+Post build Actions, Email Report
+
+Freestyle job
