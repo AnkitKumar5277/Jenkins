@@ -1,3 +1,5 @@
+Concepts :
+
 Install Jenkins  
 Understand the Pipeline and Freestyle Jobs  
 Install Plugins and Creating Freestyle Job.  
