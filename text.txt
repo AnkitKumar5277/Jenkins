@@ -1,10 +1,18 @@
-% Jenkins 
+	Jenkins 
 ek open-source automation tool hai 
 jo continuous integration aur continuous deployment (CI/CD) ke liye software development mein istemal hota hai.
 Jenkins via GIT (CI, CD)
 
 Jenkins via Git ka use karke hum Continuous Integration (CI) aur Continuous Delivery/Deployment (CD) ko automate karte hain, 
 jaha code Git me push hote hi build, test aur deploy process automatic ho jata hai.
+
+	Jenkins ka practical use project automation me
+Jenkins mein do tarah ke jobs create hote h — Freestyle job aur Pipeline job. Zyada tar cases mein Freestyle job create hoti h
+Jab bhi Git mein koi commit hota hai ya koi hot fix aata hai, tab Jenkins job trigger hoti hai.
+Us job ke andar web ya app automation scripts hoti hain.
+Jenkins un automation scripts ko run karta hai, report generate karta hai, aur wo report stakeholders (jaise project holders, QA lead, etc.) ke saath share karta hai.
+Report mein automation ke pass/fail status ke base par result share kiya jata hai.
+aap extra configurations jaise Selenium Grid add kar sakte ho
 
 What is Jenkins?
 Jenkins → Will help you to run your code automatically. It like a slave.
